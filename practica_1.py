@@ -63,10 +63,10 @@ class Producto:
         print("Descuento:", self.__descuento)
         print("Categoría:", self.__categoria)
 
-    p1 = Producto("Laptop", 15000, 10, 10, "Electrónica")
+p1 = Producto("Laptop", 15000, 10, 10, "Electrónica")
 
-    p1.info()
-    print("Precio con descuento", p1.calcular_precio_final())
+p1.info()
+print("Precio con descuento", p1.calcular_precio_final())
 
-    p1.vender(3)
-    p1.info()
+p1.vender(3)
+p1.info()
