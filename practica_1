@@ -1,2 +1,22 @@
 class Producto:
+    def __init__(self, nombre, precio, stock, descuento, categoria):
+        self.__nombre = nombre
+        self.__precio = precio
+        self.__stock = stock
+        self.__descuento = descuento
+        self.__categoria = categoria 
+
+    def get_nombre(self):
+        return self.__nombre
     
+    def get_precio(self):
+        return self.__precio
+    
+    def get_stock(self):
+        return self.__stock
+    
+    def get_descuento(self):
+        return self.__descuento
+
+    def get_categoria(self):
+        return self.__categoria
