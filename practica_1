@@ -21,3 +21,27 @@ class Producto:
     def get_categoria(self):
         return self.__categoria
 #también agregué los getters hasta este punto de los commits pero se me fue poner en el commit numero 2 olvidé escribirlo
+
+    def set_nombre(self, nombre):
+        self.__nombre = nombre
+
+    def set_precio(self, precio):
+        if precio > 0:
+            self.__precio = precio
+        else:
+            print("El precio debe ser mayor a 0")
+
+    def set_stock(self, stock):
+        if stock >= 0:
+            self.__stock = stock
+        else:
+            print("El stock no puede ser negativo")
+
+    def set_descuento(self, descuento):
+        if 0 <= descuento <= 100:
+            self.__descuento = descuento
+        else:
+            print("El descuento debe estar entre 0 y 100")
+
+    def set__categoria(self, categoria):
+        self.__categoria = categoria
