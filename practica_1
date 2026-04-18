@@ -20,3 +20,4 @@ class Producto:
 
     def get_categoria(self):
         return self.__categoria
+#también agregué los getters hasta este punto de los commits pero se me fue poner en el commit numero 2 olvidé escribirlo
