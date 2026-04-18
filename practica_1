@@ -45,3 +45,6 @@ class Producto:
 
     def set__categoria(self, categoria):
         self.__categoria = categoria
+
+    def calcular_precio_final(self):
+        return self.__precio - (self.__precio * self.__descuento / 100)
