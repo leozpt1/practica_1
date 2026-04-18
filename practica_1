@@ -48,3 +48,10 @@ class Producto:
 
     def calcular_precio_final(self):
         return self.__precio - (self.__precio * self.__descuento / 100)
+
+    def vender(self, cantidad):
+        if cantidad <= self.__stock:
+            self.__stock -= cantidad
+            print("Venta realizada")
+        else:
+            print("No hay suficiente stock")
