@@ -55,3 +55,10 @@ class Producto:
             print("Venta realizada")
         else:
             print("No hay suficiente stock")
+
+    def info(self):
+        print("Nombre:", self.__nombre)
+        print("Precio:", self.__precio)
+        print("Stock:", self.__stock)
+        print("Descuento:", self.__descuento)
+        print("Categoría:", self.__categoria)
